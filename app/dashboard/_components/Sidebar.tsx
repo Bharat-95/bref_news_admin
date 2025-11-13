@@ -70,7 +70,7 @@ export default function Sidebar({ collapsed }: SidebarProps) {
       {/* ────────────────── BRAND ────────────────── */}
       <div className="px-3 py-3 border-b border-gray-300 flex items-center justify-start h-16">
         <Image
-          src="/LOGO.png"
+          src="/Logo.png"
           alt="No Logo Found"
           width={collapsed ? 40 : 160}
           height={collapsed ? 40 : 40}
