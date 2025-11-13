@@ -3,11 +3,9 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts"
 import { ResponsiveContainer } from "recharts";
 import { CustomTooltip } from "./CustomTooltip";
 
-interface LineChartProps {
-  data: { month: string; users: number }[];
-}
 
-export const LineChartComponent = ({ data }: LineChartProps) => {
+
+export const LineChartComponent = ({ data }) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <LineChart data={data}>

@@ -6,11 +6,9 @@ const COLORS = [
   '#d8b4fe', '#e9d5ff', '#f3e8ff', '#faf5ff'
 ];
 
-interface PieChartProps {
-  data: { plan: string; count: number }[];
-}
 
-export const PieChartComponent = ({ data }: PieChartProps) => {
+
+export const PieChartComponent = ({ data }) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <PieChart>
