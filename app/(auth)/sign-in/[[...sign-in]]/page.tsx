@@ -143,31 +143,37 @@ const SignInPage = () => {
           </div>
         )}
         {step === "forgotPassword" && (
-          <div className="bg-yellow-100 border-2 rounded-xl w-full h-full flex items-center justify-center text-yellow-800 font-medium">
+          <div>
             <Image
-              src={"/signin.jpg"}
-              alt="forgot passswor img"
-              width={480}
-              height={800}
-              className="hidden h-[550px] lg:block object-cover rounded-md shadow-md"
-              priority
+              src={"/Logo.png"}
+              alt="signin img"
+              width={600}
+              height={300}
+              className="hidden h-[200px] lg:block object-cover rounded-md shadow-md"
+              
+         
+            priority
+              
             />
-            {/* <Image  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/step2.png`}     fill alt='signin image'  priority objectFit='cover'    /> */}
+            {/* <Image  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/signin.png`}     fill alt='signin image'  priority objectFit='cover'    /> */}
           </div>
         )}
         {step === "verifyOTP" ||
           (step === "resetPassword" && (
-            <div className="bg-purple-100 border-2 border-purple-300 rounded-xl w-full h-full flex items-center justify-center text-purple-800 font-medium">
-              <Image
-                src={"/step3.png"}
-                alt="signin image"
-                width={400}
-                height={700}
-                className="hidden lg:block"
-                priority
-              />
-              {/* <Image  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/step3.png`}     fill alt='signin image'  priority objectFit='cover'    /> */}
-            </div>
+            <div>
+            <Image
+              src={"/Logo.png"}
+              alt="signin img"
+              width={600}
+              height={300}
+              className="hidden h-[200px] lg:block object-cover rounded-md shadow-md"
+              
+         
+            priority
+              
+            />
+            {/* <Image  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/signin.png`}     fill alt='signin image'  priority objectFit='cover'    /> */}
+          </div>
           ))}
         {step === "resetPassword" && (
           <div className="bg-green-100 border-2 border-green-300 rounded-xl w-full h-full flex items-center justify-center text-green-800 font-medium">
@@ -325,7 +331,7 @@ const SignInPage = () => {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black"
                   placeholder="Enter your email"
                   required
                 />
