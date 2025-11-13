@@ -22,7 +22,7 @@ export default function Index() {
     checkUser();
   }, [router]);
 
-  return <div className="flex justify-center items-center mt-20">
+  return <div className="flex justify-center items-center mt-20 bg-white">
     <Loader />
   </div>;
 }
