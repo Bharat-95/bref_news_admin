@@ -230,7 +230,7 @@ export const UserTable = ({
       </div>
 
       <Modal isOpen={isConfirmOpen} onClose={() => setIsConfirmOpen(false)}>
-        <h2 className="text-lg font-semibold mb-2">Are you sure?</h2>
+        <h2 className="text-lg font-semibold mb-2 text-black">Are you sure?</h2>
         <p className="text-sm text-gray-600 mb-4">
           This action cannot be undone.
         </p>
@@ -239,6 +239,7 @@ export const UserTable = ({
             variant="secondary"
             onClick={() => setIsConfirmOpen(false)}
             disabled={loading}
+            className="bg-blue-600 text-white"
           >
             Cancel
           </Button>
@@ -246,6 +247,7 @@ export const UserTable = ({
             variant="destructive"
             onClick={handleDeleteUser}
             disabled={loading}
+            className="bg-red-600 text-white"
           >
             {loading ? "Deleting..." : "Delete"}
           </Button>
